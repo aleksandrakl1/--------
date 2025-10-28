@@ -1,0 +1,74 @@
+body {
+    background-color: blanchedalmond;
+    margin: 0;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #ff8ff9;
+}
+
+h2 {
+    font-size: 22px;
+    padding: 10px;
+    margin: 20px 0 10px;
+    color: #8bc2f9;
+}
+
+/* Абзацы и списки */
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Ссылки */
+a {
+    color: #aa7cf8;
+    margin-right: 10px;
+}
+/* Контейнер:*/
+.content {
+    display: flex;
+    margin: 20px;
+}
+
+/* Левая часть: основная информация */
+.content-left {
+    flex: 2;         
+    min-width: 300px;
+    background-color: #503434;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Правая часть: картинка */
+.content-right {
+    flex: 1;           
+    min-width: 250px;
+    background-color: #fad9f6;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Картинка:  */
+.my-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
