@@ -23,6 +23,7 @@ thead th {
     background-color: #ace8a4; /* фон заголовков */
 }
 
+
 /* Чередование цвета строк */
 tbody tr:nth-child(odd)  { background-color: hsl(286, 69%, 80%); }
 tbody tr:nth-child(even) { background-color: #c8cefc; }
