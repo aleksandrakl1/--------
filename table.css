@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+caption {
+    caption-side: top;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #fb0fbc;
+    text-align: left;
+}
+
+thead th {
+    background-color: #ace8a4; /* фон заголовков */
+}
+
+/* Чередование цвета строк */
+tbody tr:nth-child(odd)  { background-color: hsl(286, 69%, 80%); }
+tbody tr:nth-child(even) { background-color: #c8cefc; }
+
+/* Выделить первую колонку (ID) */
+tbody tr td:first-child {
+    font-weight: bold;
+}

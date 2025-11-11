@@ -1,0 +1,119 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица студентов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Основная страница</a>
+        <a href="page 2.html">Позиционирование элементов</a>
+        <a href="table.html">Таблица</a>
+    </div>
+
+    <table>
+        <caption>Список студентов</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ФИО студента</th>
+                <th>Номер зачётной книжки</th>
+                <th>Номер группы</th>
+                <th>Пол</th>
+                <th>Возраст</th>
+                <th>Форма поступления</th>
+                <th>Название направления</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Иванов Иван Иванович</td>
+                <td>202301</td>
+                <td>ПИ‑101</td>
+                <td>М</td>
+                <td>19</td>
+                <td>Бюджет</td>
+                <td>Программная инженерия</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Петрова Анастасия Сергеевна</td>
+                <td>202302</td>
+                <td>ПИ‑102</td>
+                <td>Ж</td>
+                <td>20</td>
+                <td>Бюджет</td>
+                <td>Информационные системы</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Сидоров Дмитрий Павлович</td>
+                <td>202303</td>
+                <td>ПИ‑103</td>
+                <td>М</td>
+                <td>18</td>
+                <td>Платное</td>
+                <td>Компьютерные науки</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Кузнецова Елена Владимировна</td>
+                <td>202304</td>
+                <td>ПИ‑104</td>
+                <td>Ж</td>
+                <td>21</td>
+                <td>Бюджет</td>
+                <td>Информационная безопасность</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Новиков Максим Андреевич</td>
+                <td>202305</td>
+                <td>ПИ‑105</td>
+                <td>М</td>
+                <td>22</td>
+                <td>Платное</td>
+                <td>Системное программирование</td>
+            </tr>
+        </tbody>
+    </table>
+   
+    <!-- Форма для добавления новой строки в таблицу -->
+  <form action="table.html" method="get">
+    <label>ID:
+        <input type="number" name="id" required>
+    </label><br>
+    <label>ФИО студента:
+        <input type="text" name="fio" required>
+    </label><br>
+    <label>Номер зачётной книжки:
+        <input type="text" name="record" required>
+    </label><br>
+    <label>Номер группы:
+        <input type="text" name="group" required>
+    </label><br>
+    <label>Пол:
+        <select name="gender" required>
+            <option value="М">М</option>
+            <option value="Ж">Ж</option>
+        </select>
+    </label><br>
+    <label>Возраст:
+        <input type="number" name="age" required>
+    </label><br>
+    <label>Форма поступления:
+        <select name="admission" required>
+            <option value="Бюджет">Бюджет</option>
+            <option value="Платное">Платное</option>
+        </select>
+    </label><br>
+    <label>Название направления:
+        <input type="text" name="program" required>
+    </label><br>
+    <input type="submit" value="Добавить">
+</form>
+
+</body>
+</html>

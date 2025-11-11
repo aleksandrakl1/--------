@@ -93,7 +93,26 @@ a {
 .header a:hover {
     text-decoration: underline;
 }
+/* Горизонтальное позиционирование */
+.container {
+    background-color: #004b8c; /* цвет фона для контейнера */
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;        /* выравниваем содержимое по центру */
+}
 
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: #c3defe; /* цвет квадрата */
+    margin: 0 auto;            /* отцентрировать элемент по горизонтали */
+}
+
+.image-block {
+    width: 200px;
+    display: block;
+    margin: 20px auto 0;       /* центрируем картинку по горизонтали */
+}
 .container-2 {
     background-color: #a9cbe9;
     /* фон для контейнера */
@@ -155,19 +174,19 @@ a {
 
 /* Расположение и цвет каждого квадрата */
 .square.red {
-    border-color: red;
+    border-color: rgb(226, 96, 96);
     top: 80px;
     left: 150px;
 }
 
 .square.blue {
-    border-color: blue;
+    border-color: rgb(75, 75, 255);
     top: 160px;
     left: 230px;
 }
 
 .square.green {
-    border-color: green;
+    border-color: rgb(68, 202, 68);
     top: 240px;
     left: 310px;
 }
