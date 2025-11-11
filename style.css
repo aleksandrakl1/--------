@@ -39,6 +39,7 @@ a {
     color: #aa7cf8;
     margin-right: 10px;
 }
+
 /* Контейнер:*/
 .content {
     display: flex;
@@ -47,7 +48,7 @@ a {
 
 /* Левая часть: основная информация */
 .content-left {
-    flex: 2;         
+    flex: 2;
     min-width: 300px;
     background-color: #503434;
     margin: 10px;
@@ -57,7 +58,7 @@ a {
 
 /* Правая часть: картинка */
 .content-right {
-    flex: 1;           
+    flex: 1;
     min-width: 250px;
     background-color: #fad9f6;
     margin: 10px;
@@ -71,4 +72,119 @@ a {
     height: auto;
     border-radius: 10px;
     display: block;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    /* выравнивание ссылок вправо */
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.container-2 {
+    background-color: #a9cbe9;
+    /* фон для контейнера */
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    /* делаем контейнер flex-контейнером */
+    justify-content: center;
+    /* горизонтальное центрирование вложенных элементов */
+    align-items: center;
+    /* вертикальное центрирование вложенных элементов */
+    height: 400px;
+    /* задаём высоту */
+}
+
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    /* фон для внутреннего блока */
+}
+
+.container-3 {
+    background-color: #0088ff;
+    border: 2px solid #ffaee1;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* перенос строк при нехватке места */
+    justify-content: space-between;
+    /* равномерное распределение */
+    gap: 10px;
+    /* промежуток между элементами */
+}
+
+.block-3 {
+    width: 200px;
+    height: 200px;
+    background-color: #ffdff3;
+}
+
+/* Контейнер с рамкой для трёх квадратов */
+.position-sample {
+    position: relative;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    height: 500px;
+    margin: 20px 0;
+}
+
+/* Общие свойства квадратов */
+.square {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    position: absolute;
+}
+
+/* Расположение и цвет каждого квадрата */
+.square.red {
+    border-color: red;
+    top: 80px;
+    left: 150px;
+}
+
+.square.blue {
+    border-color: blue;
+    top: 160px;
+    left: 230px;
+}
+
+.square.green {
+    border-color: green;
+    top: 240px;
+    left: 310px;
+}
+
+/* Фиксированный элемент с котиком */
+.fixed-cat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
+
+.fixed-cat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
